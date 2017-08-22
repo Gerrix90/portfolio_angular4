@@ -1,0 +1,23 @@
+.navbar-default {
+	background-color: #ffffff;
+	min-height: auto;
+	.navbar-center {
+		text-align: center;
+		float: none;
+  	>li {
+		  float: none;
+			display: inline-block;
+			text-transform: uppercase;
+			margin-right: 40px;
+			font-size: 1em;
+			color: #757575;
+		 
+            font-family: 'Nunito', sans-serif;
+
+			> a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
