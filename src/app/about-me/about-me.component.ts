@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { NgsRevealConfig } from 'ng-scrollreveal';
-import { Title } from '@angular/platform-browser';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
+import { NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -9,13 +9,29 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutMeComponent implements OnInit {
 
- constructor(config: NgsRevealConfig) {
-    // customize default values of ng-scrollreveal directives used by this component tree
-   
- 
-  }
+  public isActive: boolean = false;
+  
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  
 
   ngOnInit() {
-    // this.titleService.setTitle('Home | ng-scrollreveal');
+
+  }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    let number = this.document.body.scrollTop;
+    if (number > 200) {
+      this.isActive = true;
+    } else if (this.isActive && number < 10) {
+      this.isActive = false;
+    }
   }
 }
+
+
+ 
+
+ 
+ 
