@@ -1,0 +1,55 @@
+.form-contact {
+	background-color: #37474F;
+	font-family: 'Nunito', sans-serif;
+	padding-bottom: 130px;
+
+	h1 {
+		font-size: 3.8em;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: #ffffff;
+	}
+	.form-group {
+		input {
+		  width: 535px;
+		  padding: 10px 20px;
+		  border-color: transparent;
+		  font-size: 15px;
+		  background-color: #455A64;
+		  color: #ffffff;
+		  &:focus {
+		  	outline: none;
+		  }
+		}
+		textarea {
+		  padding: 10px 20px;
+		  border-color: transparent;
+		  font-size: 15px;
+		  background-color: #455A64;
+		  color: #ffffff;
+		  &:focus {
+		  	outline: none;
+		  	resize: none;
+		  }
+		}
+	}
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+			 
+input, textarea {
+  @include placeholder(#ffffff);
+}
