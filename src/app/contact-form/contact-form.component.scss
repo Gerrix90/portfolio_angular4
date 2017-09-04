@@ -2,16 +2,28 @@
 	background-color: #37474F;
 	font-family: 'Nunito', sans-serif;
 	padding-bottom: 130px;
-
 	h1 {
 		font-size: 3.8em;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		color: #ffffff;
 	}
+	.contact-icons {
+		list-style-type: none;
+		padding-left: 0;
+		li {
+			margin-top: 20px;
+			cursor: pointer;
+			img {
+			  width: 90px;
+		    height: 90px;
+			}
+		}
+	}
 	.form-group {
+		margin-bottom: 30px;
 		input {
-		  width: 535px;
+		  width: 100%;
 		  padding: 10px 20px;
 		  border-color: transparent;
 		  font-size: 15px;
@@ -27,6 +39,7 @@
 		  font-size: 15px;
 		  background-color: #455A64;
 		  color: #ffffff;
+		  width: 100%;
 		  &:focus {
 		  	outline: none;
 		  	resize: none;

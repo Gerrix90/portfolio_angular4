@@ -1,10 +1,18 @@
 <section class="form-contact">
   <div class="container">
-    <h1>Contact with me</h1>
     <div class="row">
       <div class="col-md-6">
+        <h1>Find me here</h1>
+        <ul class="contact-icons">
+          <li><a href="https://www.facebook.com/magda.pal.5"><img src="assets/fb-icon.png"></a></li>
+          <li><a href="https://www.linkedin.com/in/magdalena-pal-951768a0"><img src="assets/linkedin-icon.png"></a></li>
+          <li><a href="https://github.com/emka123"><img src="assets/github-icon.png"></a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h1>Contact with me</h1>
 				<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
-				  <div class="form-group" style="margin-bottom: 40px;">
+				  <div class="form-group">
 				    <input 
 				      formControlName = "name"
 				      id="name"
@@ -16,7 +24,7 @@
 				      <div *ngIf="name.errors.minlength">Min 5 sign</div>
 				    </div>
 				  </div>
-				  <div class="form-group" style="margin-bottom: 40px;">
+				  <div class="form-group">
 					  <input
 					    formControlName = "email"
 				      id="email"
@@ -27,7 +35,7 @@
 					    Mail is required
 					    </div>
 					</div>
-				  <div class="form-group" style="margin-bottom: 40px;">
+				  <div class="form-group">
 					  <textarea formControlName = "message" id="message" placeholder="Message" name="message" cols=60 rows=10></textarea>
 					</div>
 					<button class="btn btn-primary" type="submit">Submit</button>
