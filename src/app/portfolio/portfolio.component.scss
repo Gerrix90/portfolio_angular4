@@ -21,7 +21,7 @@
 				height: 30px;
 				background-color: #78909C;
 			}
-			&:hover, &:focus {
+			&:hover {
 				img {
 					opacity: 0.15;
 					-webkit-transform: translate3d(0,0,0);
@@ -107,7 +107,6 @@
 			img {
 				position: relative;
 				display: block;
-				min-height: 100%;
 				max-width: 100%;
 				opacity: 0.8;
 			}
