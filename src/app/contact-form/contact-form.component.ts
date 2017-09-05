@@ -39,16 +39,6 @@ export class ContactFormComponent implements OnInit {
 
   }
 
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    let number = this.document.body.scrollTop;
-    if (number > 5000) {
-      this.isActive = true;
-    } else if (this.isActive && number < 10) {
-      this.isActive = false;
-    }
-  }
-
 	onSubmit() {
     this.formSubmitAttempt = true;
   }
