@@ -1,7 +1,7 @@
 <section id="about_me">
   <div class="container">
 		<div class="row about-me-area">
-		  <div class="col-md-6 col-xs-12 text-center about-description animated" [class.slideInLeft]="isActive">
+		  <div class="col-md-6 col-xs-12 text-center about-description" [class.animated]="isDesktop" [class.slideInLeft]="isActive">
 		    <h1>About me</h1>
 		    <p class="introduction">Frontend developer with about 1,5 year experience.
 		    Still learning, increase skills and getting better and better.</p>
@@ -15,7 +15,7 @@
 		    <p>Thanks to remote work, I save a lot of time to commute to work, and I can work from where I just want and I love it.</p>
 		  </div>
 		  <div class="col-md-6 col-xs-12 about-photo">
-		    <img src="assets/photo.jpg" class="animated" [class.slideInRight]="isActive">
+		    <img src="assets/photo.jpg" [class.animated]="isDesktop" [class.slideInRight]="isActive">
 		  </div>
 		</div>
 	</div>
