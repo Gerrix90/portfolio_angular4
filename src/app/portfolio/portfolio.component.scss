@@ -1,4 +1,4 @@
-.portfolio {
+#portfolio {
 	 padding-top: 60px;
 	 padding-bottom: 200px;
 	 font-family: 'Nunito', sans-serif;
@@ -88,10 +88,7 @@
 			overflow: hidden;
 			margin: 10px 1%;
 			min-width: 300px;
-			max-width: 300px;
-			max-height: 300px;
-			width: 40%;
-			background: red;
+			width: 100%;
 			text-align: center;
 			 
 			h6 {
