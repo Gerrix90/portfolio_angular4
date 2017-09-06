@@ -16,6 +16,7 @@
 			background: #BDBDBD;
 			box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 			border-radius: 5px;
+			margin: 0 auto;
 			.header-project {
 				height: 30px;
 				background-color: #78909C;
@@ -144,5 +145,13 @@
 @media screen and (max-width: 1200px) {
 	#portfolio {
 		padding-bottom: 80px;
+	}
+}
+@media screen and (max-width: 768px) {
+	#portfolio {
+		h1 {
+			font-size: 2.6em;
+			margin-left: 0;
+		}
 	}
 }
