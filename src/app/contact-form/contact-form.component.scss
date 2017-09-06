@@ -1,4 +1,7 @@
 #form-contact {
+  -webkit-box-shadow: 0px -10px 5px 0px rgba(224,215,224,1);
+  -moz-box-shadow: 0px -10px 5px 0px rgba(224,215,224,1);
+  box-shadow: 0px -3px 5px 0px rgb(115, 115, 115);
 	background-color: #37474F;
 	font-family: 'Nunito', sans-serif;
 	padding-bottom: 130px;
@@ -21,34 +24,40 @@
 			}
 		}
 	}
-	.form-group {
-		margin-bottom: 30px;
-		.alert-danger {
-			padding: 8px;
-			margin-top: 15px;
+	form {
+		.btn-primary {
+			background-color: #789daf;
+			width: 20%;
 		}
-		input {
-		  width: 100%;
-		  padding: 10px 20px;
-		  border-color: transparent;
-		  font-size: 15px;
-		  background-color: #455A64;
-		  color: #ffffff;
-		  &:focus {
-		  	outline: none;
-		  }
-		}
-		textarea {
-		  padding: 10px 20px;
-		  border-color: transparent;
-		  font-size: 15px;
-		  background-color: #455A64;
-		  color: #ffffff;
-		  width: 100%;
-		  &:focus {
-		  	outline: none;
-		  	resize: none;
-		  }
+		.form-group {
+			margin-bottom: 30px;
+			.alert-danger {
+				padding: 8px;
+				margin-top: 15px;
+			}
+			input {
+			  width: 100%;
+			  padding: 10px 20px;
+			  border-color: transparent;
+			  font-size: 15px;
+			  background-color: #455A64;
+			  color: #ffffff;
+			  &:focus {
+			  	outline: none;
+			  }
+			}
+			textarea {
+			  padding: 10px 20px;
+			  border-color: transparent;
+			  font-size: 15px;
+			  background-color: #455A64;
+			  color: #ffffff;
+			  width: 100%;
+			  &:focus {
+			  	outline: none;
+			  	resize: none;
+			  }
+			}
 		}
 	}
 }

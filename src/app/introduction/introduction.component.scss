@@ -144,6 +144,11 @@
 	  }
 	}
 }
+@media screen and (max-width: 1400px) {
+	.introduction-area {
+		margin-top: 50px;
+	}
+}
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
 	.introduction-area {
 		.typewrite-effect {
