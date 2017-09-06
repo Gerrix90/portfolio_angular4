@@ -29,9 +29,6 @@ export class ContactFormComponent implements OnInit {
   get email() {
   	return this.form.get('email');
   }
-  submit(form) {
-    form.valid;
-  }
 
   constructor(@Inject(DOCUMENT) private document: Document) { }
 

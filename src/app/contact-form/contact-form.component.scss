@@ -3,7 +3,7 @@
 	font-family: 'Nunito', sans-serif;
 	padding-bottom: 130px;
 	h1 {
-		font-size: 3.8em;
+		font-size: 3.5em;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		color: #ffffff;
@@ -12,8 +12,9 @@
 		list-style-type: none;
 		padding-left: 0;
 		li {
-			margin-top: 20px;
 			cursor: pointer;
+			display: inline-block;
+			margin-right: 20px;
 			img {
 			  width: 90px;
 		    height: 90px;
