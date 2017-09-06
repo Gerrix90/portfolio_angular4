@@ -7,6 +7,8 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
   styleUrls: ['./initial-nav.component.scss']
 })
 export class InitialNavComponent implements OnInit {
+
+public isCollapsed: boolean = true;
   
 // constructor(private route: ActivatedRoute) { }
 

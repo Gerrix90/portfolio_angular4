@@ -6,10 +6,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CollapseDirective } from 'ng2-bootstrap'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AppComponent } from './app.component';
     IntroductionComponent,
     PortfolioComponent,
     SkillsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    CollapseDirective
   ],
   imports: [
     BrowserModule,

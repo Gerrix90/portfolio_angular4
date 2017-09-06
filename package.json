@@ -27,6 +27,7 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "ng-scrollreveal": "^2.0.3",
+    "ng2-bootstrap": "^1.6.3",
     "ng2-scroll-to": "^1.0.7",
     "ng2-simple-page-scroll": "^2.0.0",
     "rxjs": "^5.0.1",
