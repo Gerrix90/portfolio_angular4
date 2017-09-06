@@ -20,8 +20,8 @@
 				      placeholder="Name"
 				      name="name">
 				    <div class="alert alert-danger" *ngIf = "formSubmitAttempt && name.invalid">
-				      <div *ngIf="name.errors.required">Name is required</div>
-				      <div *ngIf="name.errors.minlength">Min 5 sign</div>
+				      <div *ngIf="name.errors.required">Name is required.</div>
+				      <div *ngIf="name.errors.minlength">Name must be at least 2 characters long.</div>
 				    </div>
 				  </div>
 				  <div class="form-group">
@@ -30,9 +30,11 @@
 				      id="email"
 				      type="text"
 				      placeholder="E-mail"
-					    name="email">
+					    name="email"
+					    pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
 					    <div class="alert alert-danger" *ngIf = "formSubmitAttempt && email.invalid">
-					    Mail is required
+					      <div *ngIf="email.errors.required">E-mail is required.</div>
+					      <div *ngIf="email.errors.pattern">E-mail must be in the correct format.</div>
 					    </div>
 					</div>
 				  <div class="form-group">
