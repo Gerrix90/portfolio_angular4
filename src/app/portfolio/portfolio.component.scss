@@ -1,6 +1,6 @@
 #portfolio {
 	 padding-top: 60px;
-	 padding-bottom: 200px;
+	 padding-bottom: 160px;
 	 font-family: 'Nunito', sans-serif;
 	 h1 {
 	 	font-weight: bold;
@@ -139,22 +139,10 @@
 	    }
 	  }
 	}
+}
 
-	@media screen and (max-width: 768px) {
-		.about-me {
-			.about-me-area {
-				display: block;
-			}
-		}
-	}
-
-	@media screen and (min-width: 768px) and (max-width: 1024px) {
-		.about-me {
-			.about-me-area {
-				.about-description {
-					margin-left: 40px;
-				}
-			}
-		}
+@media screen and (max-width: 1200px) {
+	#portfolio {
+		padding-bottom: 80px;
 	}
 }
