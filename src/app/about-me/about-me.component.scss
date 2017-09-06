@@ -16,9 +16,9 @@
 			margin-bottom: 20px;
 		}
 		h1 {
-		  font-weight: bold;
 			margin-bottom: 20px;
-			font-size: 3.5	em;
+			font-size: 3.5em;
+	 	  font-weight: bold;
 		}
 		.about-description {
 		 text-align: justify;
@@ -50,6 +50,9 @@
 			display: block;
 			h1 {
 			  font-size: 2.6em;
+			  padding-left: 0;
+			  text-align: center;
+			  font-weight: lighter;
 			}
 		}
 	}

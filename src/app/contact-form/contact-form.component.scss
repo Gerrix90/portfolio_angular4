@@ -89,4 +89,19 @@ input, textarea {
 		}
 	}
 }
+
+@media screen and (max-width: 400px) {
+	#form-contact {
+		.contact-icons {
+			li {
+				margin-right: 10px;
+				img {
+		      width: 70px;
+	        height: 70px;
+			  }
+			}
+    }
+	}
+}
 	 
+
