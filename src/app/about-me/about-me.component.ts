@@ -29,7 +29,7 @@ export class AboutMeComponent implements OnInit {
   @HostListener("window:scroll", [])
   onWindowScroll() {
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      let number = this.document.body.scrollTop;
+      let number = this.document.documentElement.scrollTop || document.body.scrollTop || 0
       if (number > 200) {
         this.isActive = true;
       } else if (this.isActive && number < 10) {
