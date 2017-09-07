@@ -177,7 +177,7 @@
 		}
 	}
 } 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
 	.introduction-area {
 		.typewrite-effect {
 			font-size: 0.48em;
@@ -190,5 +190,21 @@
 		}
 	}
 } 
+
+@media screen and (max-width: 300px) {
+	.introduction-area {
+		.typewrite-effect {
+			font-size: 0.4em;
+        p:nth-child(2) {
+        	margin-top: 5px;
+        }
+        p:nth-child(3) {
+        	margin-top: 10px;
+        }
+		}
+	}
+} 
+
+ 
 
  
