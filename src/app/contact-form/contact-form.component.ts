@@ -50,7 +50,7 @@ export class ContactFormComponent implements OnInit {
       'Content-Type': 'application/x-www-form-urlencoded'
     });
     let options = new RequestOptions({ headers: headers });
-    let url = "http://formspree.io/magdalena.pal90@gmail.com";
+    let url = "https://formspree.io/magdalena.pal90@gmail.com";
     let data = `name=${this.name.value}&email=${this.email.value}&message=${this.message.value}`;
 
     this.http.post(url, data, options).subscribe(
