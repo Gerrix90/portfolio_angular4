@@ -9,11 +9,11 @@ import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
 @Component({
-  selector: 'app-contact-form',
-  templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class ContactFormComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   @ViewChild('successModal')
   modalSuccess: ModalComponent;

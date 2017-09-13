@@ -3,7 +3,7 @@ import { InitialNavComponent } from './initial-nav/initial-nav.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactComponent } from './contact/contact.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
@@ -22,7 +22,7 @@ import { AppComponent } from './app.component';
     IntroductionComponent,
     PortfolioComponent,
     SkillsComponent,
-    ContactFormComponent,
+    ContactComponent,
     CollapseDirective,
 
   ],
