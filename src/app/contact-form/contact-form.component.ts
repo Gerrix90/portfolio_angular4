@@ -1,8 +1,10 @@
-import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { Component, OnInit, HostListener, Inject, ViewChild } from '@angular/core';
 import { Validators, FormGroup,  FormControl} from '@angular/forms';
 import { DOCUMENT } from '@angular/platform-browser';
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+// import {Popup} from 'ng2-opd-popup';
+import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
 
@@ -12,6 +14,12 @@ import { Observable } from 'rxjs/Rx';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
+
+  @ViewChild('successModal')
+  modalSuccess: ModalComponent;
+    
+  @ViewChild('errorModal')
+  modalError: ModalComponent;
 
   public isActive: boolean = false;
   
@@ -38,11 +46,11 @@ export class ContactFormComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document, private http: Http) { 
   }
-
+  
   ngOnInit() {
-
+   
   }
-
+    
 	onSubmit() {
     this.formSubmitAttempt = true;
     if (this.form.valid) {
@@ -55,9 +63,10 @@ export class ContactFormComponent implements OnInit {
       let data = `name=${this.name.value}&email=${this.email.value}&message=${this.message.value}`;
 
       this.http.post(url, data, options).subscribe(
-        data => { alert("Message sent, thank you!") },
-        err => { alert("Message not sent, technical problems :(") }
+        data => { this.modalSuccess.open(); },
+        err => { this.modalError.open(); }
       );
     }
    }
+
 };

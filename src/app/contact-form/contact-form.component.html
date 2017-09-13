@@ -41,6 +41,23 @@
 					  <textarea formControlName = "message" id="message" placeholder="Message" name="message" rows=6></textarea>
 					</div>
 					<button class="btn btn-primary" type="submit">Submit</button>
+					<modal #successModal>
+				    <modal-header [show-close]="true">
+				      <h4 class="modal-title text-center"><b>Thanks for the message!</b></h4>
+				    </modal-header>
+				    <modal-body class="text-center">
+				      I will reply as soon as I can.
+				    </modal-body>
+					</modal>
+					<modal #errorModal>
+				    <modal-header [show-close]="true">
+				      <h4 class="modal-title text-center"><b>Something went wrong :(</b></h4>
+				    </modal-header>
+				    <modal-body class="text-center">
+				      <p>Please try again or send me a message for email: magdalena.pal90@gmail.com.</p>
+				      <p>Thanks.</p>
+				    </modal-body>
+					</modal>
 				</form>
 		  </div>	
 		</div>
