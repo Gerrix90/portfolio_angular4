@@ -15,12 +15,12 @@
 		list-style-type: none;
 		padding-left: 0;
 		li {
-			cursor: pointer;
 			display: inline-block;
 			margin-right: 20px;
 			img {
 			  width: 90px;
 		    height: 90px;
+		    cursor: pointer;
 			}
 		}
 	}

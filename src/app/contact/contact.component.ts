@@ -3,7 +3,6 @@ import { Validators, FormGroup,  FormControl} from '@angular/forms';
 import { DOCUMENT } from '@angular/platform-browser';
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-// import {Popup} from 'ng2-opd-popup';
 import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 
@@ -68,5 +67,4 @@ export class ContactComponent implements OnInit {
       );
     }
    }
-
 };
