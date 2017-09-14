@@ -42,10 +42,20 @@
 
 @media screen and (max-width: 768px) {
 	.navbar-inverse {
+		button.navbar-toggle {
+			&:active, &:focus, &:visited {
+				background-color: #ffffff;
+			}
+		}
 		.navbar-collapse {
 			ul {
+				background-color: #ffffff;
+				margin-top: 0px;
 				li {
 					display: inline;
+					a {
+						padding: 0px;
+					}
 				}
 			}
 		}
