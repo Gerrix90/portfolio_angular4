@@ -1,3 +1,4 @@
+$background-skills-color: #8da5b1;
 #skills {
 	background-color: #F5F5F5;
 	font-family: 'Nunito', sans-serif;
@@ -34,67 +35,67 @@
 
 			&.ch-img-1 { 
 			  background: url('assets/css3.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-2 { 
 			  background: url('assets/html5.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-3 { 
 			  background: url('assets/js.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-4 { 
 			  background: url('assets/angular.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-5 { 
 			  background: url('assets/ts.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-6 { 
 			  background: url('assets/python.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-7 { 
 			  background: url('assets/django.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-8 { 
 			  background: url('assets/jquery.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-9 { 
 			  background: url('assets/foundation.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-10 { 
 			  background: url('assets/bootstrap.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-11 { 
 			  background: url('assets/git.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-12 { 
 			  background: url('assets/sass.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-13 { 
 			  background: url('assets/search.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-14 { 
 			  background: url('assets/book.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-15 { 
 			  background: url('assets/clock.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&.ch-img-16 { 
 			  background: url('assets/communication.png') no-repeat center center;
-			  background-color: #84aec2;
+			  background-color: $background-skills-color;
 		  }
 			&:hover {
 				box-shadow: 
