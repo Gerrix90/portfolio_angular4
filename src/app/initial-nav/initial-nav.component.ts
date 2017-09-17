@@ -8,7 +8,8 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 })
 export class InitialNavComponent implements OnInit {
 
-  
+public isCollapsed: boolean = true;
+
 // constructor(private route: ActivatedRoute) { }
 
 navigateTo(location: string): void {
