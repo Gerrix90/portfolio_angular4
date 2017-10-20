@@ -4,6 +4,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { NgZone } from '@angular/core';
 
 
 
@@ -14,13 +15,16 @@ import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 })
 export class ContactComponent implements OnInit {
 
+  public isDesktop: boolean;
+  public isActive: boolean;
+  
+  
+
   @ViewChild('successModal')
   modalSuccess: ModalComponent;
     
   @ViewChild('errorModal')
   modalError: ModalComponent;
-
-  public isActive: boolean = false;
   
 	private formSubmitAttempt: boolean;
 
@@ -47,7 +51,23 @@ export class ContactComponent implements OnInit {
   }
   
   ngOnInit() {
-   
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      this.isDesktop = true;
+      this.isActive = false;
+    } else {
+      this.isDesktop = false;
+      this.isActive = true;
+    }
+  }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      let number = this.document.documentElement.scrollTop || document.body.scrollTop || 0
+      if (number > 2800) {
+        this.isActive = true;
+      } 
+    }
   }
     
 	onSubmit() {

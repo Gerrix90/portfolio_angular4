@@ -32,9 +32,7 @@ export class AboutMeComponent implements OnInit {
       let number = this.document.documentElement.scrollTop || document.body.scrollTop || 0
       if (number > 200) {
         this.isActive = true;
-      } else if (this.isActive && number < 10) {
-        this.isActive = false;
-      }
+      } 
     }
   }
 }

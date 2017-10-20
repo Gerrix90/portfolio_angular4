@@ -13,7 +13,6 @@ import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
