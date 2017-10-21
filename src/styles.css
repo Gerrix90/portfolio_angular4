@@ -16,7 +16,7 @@ body {
   height: 4em;
 }
 .loader {
-  color: #000000;
+  color: #37474f;
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;
