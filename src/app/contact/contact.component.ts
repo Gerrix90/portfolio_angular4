@@ -26,7 +26,7 @@ export class ContactComponent implements OnInit {
   @ViewChild('errorModal')
   modalError: ModalComponent;
   
-	private formSubmitAttempt: boolean;
+	public formSubmitAttempt: boolean;
 
   form = new FormGroup({
   	name: new FormControl('', [
@@ -51,23 +51,6 @@ export class ContactComponent implements OnInit {
   }
   
   ngOnInit() {
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      this.isDesktop = true;
-      this.isActive = false;
-    } else {
-      this.isDesktop = false;
-      this.isActive = true;
-    }
-  }
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      let number = this.document.documentElement.scrollTop || document.body.scrollTop || 0
-      if (number > 2800) {
-        this.isActive = true;
-      } 
-    }
   }
     
 	onSubmit() {

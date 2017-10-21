@@ -7,7 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
-import { CollapseDirective } from 'ng2-bootstrap'
+import { CollapseModule } from 'ngx-bootstrap';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
@@ -21,8 +21,7 @@ import { AppComponent } from './app.component';
     IntroductionComponent,
     PortfolioComponent,
     SkillsComponent,
-    ContactComponent,
-    CollapseDirective,
+    ContactComponent
 
   ],
   imports: [
@@ -31,7 +30,8 @@ import { AppComponent } from './app.component';
     HttpModule,
     NgsRevealModule.forRoot(),
     ReactiveFormsModule,
-    Ng2Bs3ModalModule
+    Ng2Bs3ModalModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
