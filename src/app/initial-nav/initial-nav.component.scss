@@ -7,10 +7,133 @@
 }
 
 .navbar-inverse {
-	background-color: #ffffff;
+	background-color: transparent;
 	min-height: auto;
-	@include box-shadow(0 1px 2px rgba(0,0,0,0.1));
+	position: absolute;
+	top: 0;
+	left: 0;
 	border: none;
+	height: 160px;
+	@media screen and (max-width: 768px) {
+		height: 100%;
+	}
+	.container {
+	  height: inherit;
+	  display: flex;
+	  align-items: center;
+		justify-content: flex-end;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.mobile-nav-button {
+
+	  position: absolute;
+    z-index: 103;
+    display: none;
+    padding: 0;
+    top: 66px;
+		right: 25px;
+		cursor: pointer;
+		@media screen and(max-width: 768px) {
+			display: block;
+		}
+		&.active {
+		
+
+			@media screen and (max-width: 768px) {
+				.mobile-nav-icon {
+					span {
+						background: none;
+						&:before {
+							top: 0;
+							-webkit-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							-ms-transform: rotate(45deg);
+							-o-transform: rotate(45deg);
+							transform: rotate(45deg);
+						}
+						&:after {
+							bottom: 0;
+							-webkit-transform: rotate(-45deg);
+							-moz-transform: rotate(-45deg);
+							-ms-transform: rotate(-45deg);
+							-o-transform: rotate(-45deg);
+							transform: rotate(-45deg);
+						}
+					}
+				}
+			}
+		}
+	  .mobile-nav-icon {
+		  display: block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 20px 30px;
+      width: 15px;
+      height: 15px;
+      font-size: 0;
+	    cursor: pointer;
+	    span {
+		    display: block;
+        position: absolute;
+        top: 17px;
+        width: 15px;
+        height: 2px;
+				background-color: #fff;
+				@media screen and(max-width: 768px) {
+					&:after {
+						bottom: -4px;
+						transition-property: bottom, -webkit-transform;
+						-o-transition-property: bottom, -o-transform;
+						-moz-transition-property: bottom, transform, -moz-transform;
+						transition-property: bottom, transform;
+						transition-property: bottom, transform, -webkit-transform, -moz-transform, -o-transform;
+						-webkit-transition-property: bottom, -webkit-transform;
+						display: block;
+						position: absolute;
+						width: 15px;
+						height: 2px;
+						background-color: #fff;
+						content: "";
+						-webkit-transition-duration: 0.15s, 0.15s;
+						-moz-transition-duration: 0.15s, 0.15s;
+						-o-transition-duration: 0.15s, 0.15s;
+						transition-duration: 0.15s, 0.15s;
+						-webkit-transition-delay: 0.15s, 0s;
+						-moz-transition-delay: 0.15s, 0s;
+						-o-transition-delay: 0.15s, 0s;
+						transition-delay: 0.15s, 0s;
+					}
+					&:before {
+						top: -4px;
+						transition-property: top, -webkit-transform;
+						-o-transition-property: top, -o-transform;
+						-moz-transition-property: top, transform, -moz-transform;
+						transition-property: top, transform;
+						transition-property: top, transform, -webkit-transform, -moz-transform, -o-transform;
+						-webkit-transition-property: top, -webkit-transform;
+						display: block;
+						position: absolute;
+						width: 15px;
+						height: 2px;
+						background-color: #fff;
+						content: "";
+						-webkit-transition-duration: 0.15s, 0.15s;
+						-moz-transition-duration: 0.15s, 0.15s;
+						-o-transition-duration: 0.15s, 0.15s;
+						transition-duration: 0.15s, 0.15s;
+						-webkit-transition-delay: 0.15s, 0s;
+						-moz-transition-delay: 0.15s, 0s;
+						-o-transition-delay: 0.15s, 0s;
+						transition-delay: 0.15s, 0s;
+					}
+				}
+			}
+		}
+	}
+ 
 	button.navbar-toggle {
 		border-color: #989494;
 		cursor: pointer;
@@ -23,41 +146,64 @@
 			background-color: #989494;
 		}
 	}
-  .navbar-collapse  {
-  	border-color: #ded8d8;
-		@media screen and (max-width: $break-medium) {
-			ul {
-				background-color: #ffffff;
-				margin-top: 0px;
-				padding: 15px 0;
-				li {
-					display: inline;
-					a {
-						padding: 0px;
-					}
-				}	
-			}
-		}
-  }
-	.navbar-center {
-		text-align: center;
-		float: none;
-  	>li {
-		  float: none;
-			display: inline-block;
-			text-transform: uppercase;
-			margin-right: 40px;
-			font-size: 1em;
-			color: #757575;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-			> a {
-				padding-top: 12px;
-				padding-bottom: 12px;
-				&:hover, &:focus {
-          color: #4f4c4c;
+}
+.navbar-collapse  {
+	border-color: #ded8d8;
+	@media screen and (max-width: $break-medium) {
+		ul {
+			background-color: #ffffff;
+			margin-top: 0px;
+			padding: 15px 0;
+			li {
+				display: inline;
+				a {
+					padding: 0px;
 				}
+			}	
+		}
+	}
+}
+.navbar-center {
+	text-align: center;
+	float: none;
+	@media screen and (max-width: 768px) {
+		text-align: left;
+    margin-right: 0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    padding: 100px 0 0 10px;
+    background-color:#313f46;
+    width: 200px;
+    -webkit-transition: right 0.3s cubic-bezier(0.46, 0.01, 0.32, 1);
+    -o-transition: right 0.3s cubic-bezier(0.46, 0.01, 0.32, 1);
+    -moz-transition: right 0.3s cubic-bezier(0.46, 0.01, 0.32, 1);
+    transition: right 0.3s cubic-bezier(0.46, 0.01, 0.32, 1);
+    height: 100vh;
+		z-index: 102;
+		&.selected {
+			right: 0;
+		}
+	}
+	>li {
+		float: none;
+		display: inline-block;
+		text-transform: uppercase;
+		margin-right: 40px;
+		font-size: 1em;
+		
+		font-family: 'Nunito', sans-serif;
+		cursor: pointer;
+		> a {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			color: #ffffff;
+			font-size: 16px;
+			&:hover {
+				color: #eabbbc;
 			}
 		}
 	}
 }
+ 

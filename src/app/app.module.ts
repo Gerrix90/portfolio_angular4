@@ -12,6 +12,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
 import { AppComponent } from './app.component';
+import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { AppComponent } from './app.component';
     NgsRevealModule.forRoot(),
     ReactiveFormsModule,
     Ng2Bs3ModalModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    SimpleSmoothScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,10 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "mapRoot": "./",
     "module": "es6",
     "noStrictGenericChecks": true,
@@ -12,9 +15,17 @@
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
     "target": "es5",
-    "paths": { "@angular/*": ["../node_modules/@angular/*"] },
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ]
+    },
     "typeRoots": [
       "../node_modules/@types"
     ]
-  }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
 }

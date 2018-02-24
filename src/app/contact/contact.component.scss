@@ -17,26 +17,6 @@
 			margin-top: 0px;
 		}
 	}
-	.contact-icons {
-		list-style-type: none;
-		padding-left: 0;
-		li {
-			display: inline-block;
-			margin-right: 20px;
-	    @media screen and (max-width: $break-small-mobile) {
-				margin-right: 10px;
-      }
-			img {
-			  width: 90px;
-		    height: 90px;
-		    cursor: pointer;
-	      @media screen and (max-width: $break-small-mobile) {
-		    	width: 70px;
-	        height: 70px;
-	      }
-			}
-		}
-	}
 	form {
 		.btn-primary {
 			background-color: #789daf;
@@ -76,6 +56,28 @@
 		}
 	}
 }
+.contact-icons {
+	list-style-type: none;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		margin-right: 20px;
+		@media screen and (max-width: $break-small-mobile) {
+			margin-right: 10px;
+		}
+		img {
+			width: 90px;
+			height: 90px;
+			cursor: pointer;
+			@media screen and (max-width: $break-small-mobile) {
+				width: 70px;
+				height: 70px;
+			}
+		}
+	}
+}
+
+ 
 
 @mixin placeholder($color) {
   &::-webkit-input-placeholder {

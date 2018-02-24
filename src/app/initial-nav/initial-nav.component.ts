@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-
+import { SimpleSmoothScrollService } from 'ng2-simple-smooth-scroll';
+import { SimpleSmoothScrollOption } from 'ng2-simple-smooth-scroll';
 @Component({
   selector: 'app-initial-nav',
   templateUrl: './initial-nav.component.html',
@@ -8,19 +9,17 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 })
 export class InitialNavComponent implements OnInit {
 
-public isCollapsed: boolean = true;
+  isActive: boolean = false;
 
-// constructor(private route: ActivatedRoute) { }
+  constructor(private smooth: SimpleSmoothScrollService) { 
+  }
 
-navigateTo(location: string): void {
-window.location.hash = location;
- 
-}
+  ngOnInit() {
+    this.smooth.smoothScrollToAnchor();
+  }
 
-ngOnInit() {
-    
-
-
+  toggleClass() {
+    this.isActive = !this.isActive;
   }
 
 }
