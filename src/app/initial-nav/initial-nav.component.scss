@@ -14,18 +14,25 @@
 	left: 0;
 	border: none;
 	height: 160px;
-	@media screen and (max-width: 768px) {
+	width:100%;
+	padding: 0;
+ 	@media screen and (max-width: $break-medium) {
 		height: 100%;
 	}
-	.container {
+	.nav-container {
+		 
 	  height: inherit;
 	  display: flex;
 	  align-items: center;
 		justify-content: flex-end;
+		width:100%;
 		overflow: hidden;
 		position: relative;
+		padding-right: 100px;
+		@media screen and (max-width: $break-medium) {
+      padding: 0;
+    }
 	}
-
 	.mobile-nav-button {
 
 	  position: absolute;
@@ -35,13 +42,11 @@
     top: 66px;
 		right: 25px;
 		cursor: pointer;
-		@media screen and(max-width: 768px) {
+		@media screen and(max-width: $break-medium) {
 			display: block;
 		}
 		&.active {
-		
-
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: $break-medium) {
 				.mobile-nav-icon {
 					span {
 						background: none;
@@ -82,7 +87,7 @@
         width: 15px;
         height: 2px;
 				background-color: #fff;
-				@media screen and(max-width: 768px) {
+				@media screen and(max-width: $break-medium) {
 					&:after {
 						bottom: -4px;
 						transition-property: bottom, -webkit-transform;
@@ -166,7 +171,9 @@
 .navbar-center {
 	text-align: center;
 	float: none;
-	@media screen and (max-width: 768px) {
+	display: inline-block;
+	z-index: 10000;
+	@media screen and (max-width: $break-medium) {
 		text-align: left;
     margin-right: 0;
     display: inline-block;
@@ -185,6 +192,7 @@
 		&.selected {
 			right: 0;
 		}
+
 	}
 	>li {
 		float: none;
@@ -192,9 +200,11 @@
 		text-transform: uppercase;
 		margin-right: 40px;
 		font-size: 1em;
-		
 		font-family: 'Nunito', sans-serif;
 		cursor: pointer;
+		@media screen and (max-width: $break-medium) {
+			padding: 10px 0;
+		}
 		> a {
 			padding-top: 12px;
 			padding-bottom: 12px;
@@ -202,6 +212,7 @@
 			font-size: 16px;
 			&:hover {
 				color: #eabbbc;
+				text-decoration: none;
 			}
 		}
 	}

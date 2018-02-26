@@ -1,41 +1,31 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
- 
-      <a href="#" class="mobile-nav-button" [class.active]="isActive" (click)="toggleClass()">
-          <span class="mobile-nav-icon">
-            <span></span>
-        </span>
-      </a>
-      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" (click)="isCollapsed = !isCollapsed">
-
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> -->
-      <ul class="nav navbar-nav navbar-center" [class.selected]="isActive">
-          <li>
-            <a href="#about_me"
-              SimpleSmoothScroll [showHash]="true">About me
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio"
-              SimpleSmoothScroll [showHash]="true">Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#skills"
-              SimpleSmoothScroll [showHash]="true">Skills
-            </a>
-          </li>
-          <li>
-            <a href="#contact"
-              SimpleSmoothScroll [showHash]="true">Contact
-            </a>
-          </li>
-        </ul>
-  
- 
+  <a href="#" class="mobile-nav-button" [class.active]="isActive" (click)="toggleClass()">
+      <span class="mobile-nav-icon">
+        <span></span>
+    </span>
+  </a>
+  <div class="nav-container">
+   <ul class="nav navbar-nav navbar-center" [class.selected]="isActive">
+      <li>
+        <a href="#about_me"
+          SimpleSmoothScroll [showHash]="true">About me
+        </a>
+      </li>
+      <li>
+        <a href="#portfolio"
+          SimpleSmoothScroll [showHash]="true">Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#skills"
+          SimpleSmoothScroll [showHash]="true">Skills
+        </a>
+      </li>
+      <li>
+        <a href="#contact"
+          SimpleSmoothScroll [showHash]="true">Contact
+        </a>
+      </li>
+    </ul>
   </div> 
 </nav>

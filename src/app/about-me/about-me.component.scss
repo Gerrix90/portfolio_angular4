@@ -19,12 +19,13 @@
 	}
 	.introduction {
 		color: #6d6969;
-		font-size: 1.4em;
+		font-size: 20px;
 		margin-bottom: 20px;
+		line-height: 28px;
 	}
 	h1 {
 		margin-bottom: 20px;
-		font-size: 3.5em;
+		font-size: 49px;
 		font-weight: bold;
 		@media screen and (max-width: $break-medium) {
 			font-size: 2.6em;
@@ -33,6 +34,12 @@
 			font-weight: lighter;
 			margin-top: 0px;
 		}
+	}
+	p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	
 	}
 }
 .about-description {

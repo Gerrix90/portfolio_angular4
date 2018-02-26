@@ -6,13 +6,14 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { CollapseModule } from 'ngx-bootstrap';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
 import { AppComponent } from './app.component';
-import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+import { SimpleSmoothScrollModule } from '../../node_modules/ng2-simple-smooth-scroll';
+import { BsModalModule } from 'ng2-bs3-modal';
+
 
 
 @NgModule({
@@ -32,9 +33,9 @@ import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
     HttpModule,
     NgsRevealModule.forRoot(),
     ReactiveFormsModule,
-    Ng2Bs3ModalModule,
     CollapseModule.forRoot(),
-    SimpleSmoothScrollModule
+    SimpleSmoothScrollModule,
+    BsModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]

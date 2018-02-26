@@ -3,7 +3,7 @@ import { Validators, FormGroup,  FormControl} from '@angular/forms';
 import { DOCUMENT } from '@angular/platform-browser';
 import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-import { ModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { BsModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { NgZone } from '@angular/core';
 
 
@@ -21,10 +21,10 @@ export class ContactComponent implements OnInit {
   
 
   @ViewChild('successModal')
-  modalSuccess: ModalComponent;
+  modalSuccess: BsModalComponent;
     
   @ViewChild('errorModal')
-  modalError: ModalComponent;
+  modalError: BsModalComponent;
   
 	public formSubmitAttempt: boolean;
 
