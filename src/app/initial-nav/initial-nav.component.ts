@@ -13,31 +13,13 @@ export class InitialNavComponent implements OnInit {
 
   isActive: boolean = false;
 
-  constructor(private pageScrollService: PageScrollService, @Inject(DOCUMENT) private document: any) { 
-  }
-
-//   public goToHead2(): void {
-//     let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#head2');
-//     this.pageScrollService.start(pageScrollInstance);
-// };    
-
-// public scrollSomewhereHorizontally(): void {
-//     let pageScrollInstance: PageScrollInstance = PageScrollInstance.newInstance({document: this.document, scrollTarget: '#targetToTheRight', verticalScrolling: false});
-//     this.pageScrollService.start(pageScrollInstance);
-// }; 
-
-// public goToHeadingInContainer(): void {
-//     let pageScrollInstance: PageScrollInstance = PageScrollInstance.newInstance({document: this.document, scrollTarget: '.headingClass', scrollingViews: [this.container.nativeElement]});
-//     this.pageScrollService.start(pageScrollInstance);
-// };
- 
-
+  constructor(private pageScrollService: PageScrollService) { 
+  } 
   ngOnInit() {
-    // this.smooth.smoothScrollToAnchor();
   }
 
   toggleClass() {
-    // this.isActive = !this.isActive;
+    this.isActive = !this.isActive;
   }
 
 }

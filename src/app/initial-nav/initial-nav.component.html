@@ -1,29 +1,25 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <a href="#" class="mobile-nav-button" [class.active]="isActive" (click)="toggleClass()">
-      <span class="mobile-nav-icon">
-        <span></span>
+    <span class="mobile-nav-icon">
+      <span></span>
     </span>
   </a>
   <div class="nav-container">
-      <div smoothScroll></div>
-   <ul class="nav navbar-nav navbar-center" [class.selected]="isActive">
-
+  <div smoothScroll></div>
+    <ul class="nav navbar-nav navbar-center" [class.selected]="isActive">
       <li>
         <a pageScroll href="#about_me" [pageScrollDuration]="650">About me
         </a>
       </li>
       <li>
-
         <a pageScroll href="#portfolio" [pageScrollDuration]="650">Portfolio
         </a>
       </li>
       <li>
-  
         <a pageScroll href="#skills" [pageScrollDuration]="650">Skills
         </a>
       </li>
       <li>
- 
         <a pageScroll href="#contact" [pageScrollDuration]="650">Contact
         </a>
       </li>
