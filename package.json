@@ -36,6 +36,7 @@
     "ng2-simple-smooth-scroll": "^0.2.1",
     "ng2-smooth-scroll": "^1.0.1",
     "ngx-bootstrap": "^2.0.2",
+    "ngx-page-scroll": "^4.0.2",
     "rxjs": "^5.0.1",
     "scrollreveal": "^3.3.6",
     "ts-helpers": "^1.1.1",

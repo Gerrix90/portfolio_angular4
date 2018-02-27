@@ -11,8 +11,10 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgsRevealModule } from 'ng-scrollreveal'; 
 import { AppComponent } from './app.component';
-import { SimpleSmoothScrollModule } from '../../node_modules/ng2-simple-smooth-scroll';
+// import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
 import { BsModalModule } from 'ng2-bs3-modal';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+
 
 
 
@@ -25,8 +27,7 @@ import { BsModalModule } from 'ng2-bs3-modal';
     PortfolioComponent,
     SkillsComponent,
     ContactComponent
-
-  ],
+    ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -34,8 +35,9 @@ import { BsModalModule } from 'ng2-bs3-modal';
     NgsRevealModule.forRoot(),
     ReactiveFormsModule,
     CollapseModule.forRoot(),
-    SimpleSmoothScrollModule,
-    BsModalModule
+    // SimpleSmoothScrollModule,
+    BsModalModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
