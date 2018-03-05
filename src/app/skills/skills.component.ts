@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   public isDesktop: boolean;
   public isActive: boolean;
-  public isActive2: boolean;
-  public isActive3: boolean;
+ 
  
   constructor() { }
 
@@ -18,7 +17,7 @@ export class SkillsComponent implements OnInit {
   };
 
   enter(skillNumber) {
-    this[`isActive${skillNumber}`] = true;
+    this[`isPresent${skillNumber}`] = true;
   }
 
   ngOnInit() {
