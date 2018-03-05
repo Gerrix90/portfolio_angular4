@@ -1,6 +1,5 @@
 @import '../../styles/breakpoints.scss';
 
- 
 
 #skills {
 	background-color: #37474f;
@@ -50,9 +49,13 @@
 	-webkit-transform: translate(0);
 	transform: translate(0);
 	transition: all .8s cubic-bezier(.175,.885,.32,1.275) .1s;
-	@media screen and (max-width: $break-medium) {
+	@media screen and (max-width: $break-large-tablet) {
     margin-bottom: 60px;
 	}
+}
+
+.text-skills {
+  padding-left: 10px;
 }
 
 .left {
@@ -112,11 +115,7 @@
 	}
 	}
 }
-.text-skills {
-	display: inline-block;
-	margin-left: 20px;
-}
-
+ 
 
  
  
