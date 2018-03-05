@@ -53,6 +53,26 @@
 					-webkit-transform: translate3d(0,0,0);
 					transform: translate3d(0,0,0);
 				}
+				p {
+					@media screen and (min-width: $break-large-desktop) {
+						font-size: 15px;
+					}
+					@media screen and (min-width: $break-medium-desktop) and (max-width: $break-large-desktop) {
+						font-size: 14px;
+					}
+					@media screen and (min-width: $break-large-tablet) and (max-width: $break-medium-desktop) {
+						font-size: 12px;
+					}
+					@media screen and (min-width: $break-large-mobile) and (max-width: $break-large-tablet) {
+						font-size: 24px;
+					}
+					@media screen and (min-width: $break-small-mobile) and (max-width: $break-large-mobile) {
+						font-size: 16px;	
+					}
+					@media screen and (max-width: $break-small-mobile) {
+						font-size: 11px;	
+					}
+				}
 			}
 			img {
 				max-width: none;
@@ -72,8 +92,11 @@
 		  	position: relative;
 			  overflow: hidden;
 			  padding: 0.3em 0;
-			  top: -35px;
-			  font-size: 12px;  
+			  top: -30px;
+				font-size: 12px;  
+				@media screen and (min-width: $break-large-mobile) and (max-width: $break-large-tablet) {
+					top: -27px;
+				}
 			  &:after {
 		  		position: absolute;
 					bottom: 0;
@@ -143,16 +166,10 @@
 					}
 				}
 				p {
-					font-size: 0.7em;
+	 
 					padding-bottom: 6px;
 					margin-bottom: 0;
 					text-transform: none;
-					@media screen and (max-width: $break-large-mobile) {
-						font-size: 0.6em
-					}
-					@media screen and (min-width: $break-large-mobile) and (max-width: $break-large-tablet) {
-						font-size: 1em
-					}
 				}
 				a {
 					color: #ffffff;
