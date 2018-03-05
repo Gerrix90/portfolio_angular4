@@ -18,7 +18,6 @@ export class SkillsComponent implements OnInit {
   };
 
   enter(skillNumber) {
-    debugger
     this[`isActive${skillNumber}`] = true;
   }
 
