@@ -15,18 +15,11 @@ export class SkillsComponent implements OnInit {
 
   public config = {
     position: 'bottom'
-    
-};
+  };
 
   enter(skillNumber) {
-    this.isActive2 = true;
-  }
-
-
- 
-  leave() {
-
-    
+    debugger
+    this[`isActive${skillNumber}`] = true;
   }
 
   ngOnInit() {
@@ -39,3 +32,4 @@ export class SkillsComponent implements OnInit {
     }
   }
 }
+ 
