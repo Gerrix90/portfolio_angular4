@@ -40,7 +40,7 @@
 				  <div class="form-group">
 					  <textarea formControlName = "message" id="message" placeholder="Message" name="message" rows=6></textarea>
 					</div>
-					<button class="btn btn-primary" type="submit">Submit</button>
+					<!-- <button class="btn btn-primary" type="submit">Submit</button>
 					<bs-modal #successModal>
 				    <bs-modal-header [showDismiss]="true">
 				      <h4 class="modal-title text-center"><b>Thanks for the message!</b></h4>
@@ -57,6 +57,18 @@
 				      <p>Please try again or send me a message for email: magdalena.pal90@gmail.com.</p>
 				      <p>Thanks.</p>
 				    </bs-modal-body>
+					</bs-modal> -->
+
+					<button type="button" class="btn btn-default" (click)="modal.open()">Open meeeeee!</button>
+ 
+					<bs-modal #modal>
+							<bs-modal-header [showDismiss]="true">
+									<h4 class="modal-title">I'm a modal!</h4>
+							</bs-modal-header>
+							<bs-modal-body>
+									Hello World!
+							</bs-modal-body>
+							<bs-modal-footer [showDefaultButtons]="true"></bs-modal-footer>
 					</bs-modal>
 				</form>
 		  </div>	

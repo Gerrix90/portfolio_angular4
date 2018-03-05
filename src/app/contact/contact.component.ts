@@ -7,7 +7,6 @@ import { BsModalComponent } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { NgZone } from '@angular/core';
 
 
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -17,9 +16,8 @@ export class ContactComponent implements OnInit {
 
   public isDesktop: boolean;
   public isActive: boolean;
-  
-  
 
+  
   @ViewChild('successModal')
   modalSuccess: BsModalComponent;
     
@@ -49,9 +47,15 @@ export class ContactComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: Document, private http: Http) { 
   }
-  
+ 
   ngOnInit() {
   }
+
+  close() {
+    this.modalSuccess.close();
+}
+
+ 
     
 	onSubmit() {
     this.formSubmitAttempt = true;
