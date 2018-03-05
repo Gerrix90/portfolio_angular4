@@ -3,6 +3,11 @@
 	height: 900px;
 	color: #ffffff;
 	padding-top: 280px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+	@media screen   and (max-width: 1024px) {
+		padding-bottom: 160px;
+	}
 	.bg {
 		position: absolute;
 		top: 0;
