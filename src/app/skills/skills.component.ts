@@ -8,7 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   public isDesktop: boolean;
   public isActive: boolean;
+  public isActive2: boolean;
+  public isActive3: boolean;
+ 
   constructor() { }
+
+  public config = {
+    position: 'bottom'
+    
+};
+
+  enter(skillNumber) {
+    this.isActive2 = true;
+  }
+
+
+ 
+  leave() {
+
+    
+  }
 
   ngOnInit() {
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
