@@ -3,7 +3,7 @@
 #portfolio {
 	padding-top: 60px;
 	padding-bottom: 160px;
-	
+
 	@media screen and (max-width: $break-medium-desktop) {
 	   padding-bottom: 80px;
     }
@@ -18,14 +18,18 @@
 			margin-top: 0px;
     }
 	}
+
+	.training-apps-title {
+		margin-top: 80px;
+	}
 	.grid {
 		position: relative;
-		margin: 50px auto; 
+		margin: 50px auto;
 		list-style: none;
 		text-align: center;
 		.effect-sarah {
 			background: #888585;
-			
+
 			box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 			border-radius: 5px;
 			margin: 0 auto;
@@ -40,12 +44,12 @@
 				img {
 					opacity: 0.15;
 					-webkit-transform: translate3d(0,0,0);
-					transform: translate3d(0,0,0);				
+					transform: translate3d(0,0,0);
 				}
 				h6 {
 					&:after {
 						-webkit-transform: translate3d(0,0,0);
-						transform: translate3d(0,0,0);					
+						transform: translate3d(0,0,0);
 					}
 				}
 				p, a {
@@ -67,10 +71,10 @@
 						font-size: 24px;
 					}
 					@media screen and (min-width: $break-small-mobile) and (max-width: $break-large-mobile) {
-						font-size: 16px;	
+						font-size: 16px;
 					}
 					@media screen and (max-width: $break-small-mobile) {
-						font-size: 11px;	
+						font-size: 11px;
 					}
 				}
 			}
@@ -93,7 +97,7 @@
 			  overflow: hidden;
 			  padding: 0.3em 0;
 			  top: -30px;
-				font-size: 12px;  
+				font-size: 12px;
 				@media screen and (min-width: $break-large-mobile) and (max-width: $break-large-tablet) {
 					top: -27px;
 				}
@@ -109,16 +113,27 @@
 					transition: transform 0.35s;
 					-webkit-transform: translate3d(-100%,0,0);
 					transform: translate3d(-100%,0,0);
-			  }	
+			  }
 	    }
 	    p, a {
-	    	padding: 1em 0;
-				opacity: 0;
-				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-				transition: opacity 0.35s, transform 0.35s;
-				-webkit-transform: translate3d(100%,0,0);
-				transform: translate3d(100%,0,0);
-	    }
+
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(100%,0,0);
+			transform: translate3d(100%,0,0);
+
+
+		}
+		p {
+			padding: 1em 0;
+			&:first-of-type {
+				padding: 0;
+			}
+		}
+		a {
+			padding: 15px 0;
+		}
 		}
 		figure {
 			position: relative;
@@ -127,7 +142,7 @@
 			margin: 10px 1%;
 			width: 100%;
 			text-align: center;
-			 
+
 			h6 {
 				word-spacing: -0.15em;
 		    font-weight: 300;
@@ -141,6 +156,7 @@
 					font-size: 40.5%;
 		    }
 			}
+
 			img {
 				position: relative;
 				display: block;
@@ -166,7 +182,7 @@
 					}
 				}
 				p {
-	 
+
 					padding-bottom: 6px;
 					margin-bottom: 0;
 					text-transform: none;
