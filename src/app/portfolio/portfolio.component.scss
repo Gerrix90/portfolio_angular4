@@ -3,7 +3,10 @@
 #portfolio {
 	padding-top: 60px;
 	padding-bottom: 160px;
-
+	@media screen and (max-width: $break-large-mobile) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	@media screen and (max-width: $break-medium-desktop) {
 	   padding-bottom: 80px;
     }
