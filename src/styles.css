@@ -6,6 +6,8 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+
+
 .page-wrapper {
   overflow: hidden;
 }
@@ -23,7 +25,7 @@ body {
   color: #37474f;
   text-indent: -9999em;
   margin: 88px auto;
-  position: relative;
+  position: absolute;
   font-size: 11px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -31,6 +33,7 @@ body {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
   top: 50%;
+  right: 50%;
 }
 .loader:before,
 .loader:after {
