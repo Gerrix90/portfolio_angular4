@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   public isDesktop: boolean;
   public isActive: boolean;
- 
- 
+  public isPresent1: boolean;
+  public isPresent2: boolean;
+  public isPresent3: boolean;
+  public isPresent4: boolean;
+  public isPresent5: boolean;
+  public isPresent6: boolean;
+  public isPresent7: boolean;
+  public isPresent8: boolean;
+  public isPresent9: boolean;
+  public isPresent10: boolean;
+
   constructor() { }
 
   public config = {
@@ -30,4 +39,3 @@ export class SkillsComponent implements OnInit {
     }
   }
 }
- 
