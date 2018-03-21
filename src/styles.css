@@ -6,8 +6,6 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-
-
 .page-wrapper {
   overflow: hidden;
 }
@@ -32,7 +30,7 @@ body {
   transform: translateZ(0);
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
-  top: 50%;
+  top: 40%;
   right: 50%;
 }
 .loader:before,
