@@ -1,13 +1,11 @@
 @import '../../styles/breakpoints.scss';
+@import '../../styles/abstracts/variables.scss';
+
 
 #contact {
-  // -webkit-box-shadow: 0px -10px 5px 0px rgba(224,215,224,1);
-  // -moz-box-shadow: 0px -10px 5px 0px rgba(224,215,224,1);
-	// box-shadow: 0px -3px 5px 0px rgb(115, 115, 115);
 	-webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
-
-	background-color: #37474F;
+	background-color: $section-background-color-dark;
 	padding-bottom: 130px;
 	padding: 100px 0;
 	@media screen and (max-width: 768px) {
@@ -24,7 +22,7 @@
 	}
 	h1 {
 		font-size: 49px;
-		color: #ffffff;
+		color: $section-font-color-light;
 		padding-bottom: 10px;
 	  @media screen and (max-width: $break-medium) {
 			font-size: 2.6em;

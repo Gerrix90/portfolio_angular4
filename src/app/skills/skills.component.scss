@@ -1,9 +1,11 @@
 @import '../../styles/breakpoints.scss';
+@import '../../styles/abstracts/variables.scss';
+
 
 
 #skills {
-	background-color: #37474f;
-	color: #ffffff;
+	background-color: $section-background-color-dark;
+	color: $section-font-color-light;
 	padding: 80px;
 	-webkit-clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
 	clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
